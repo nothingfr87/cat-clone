@@ -1,7 +1,11 @@
-all: clean build
+all: clean build install
 
 build:
-	gcc src/main.c -o main
+	gcc src/main.c -o cfetch 
+
+install: build
+	chmod 777 cfetch
+	sudo mv cfetch /usr/local/bin/
 
 clean:
 	rm -rf main 2>/dev/null
