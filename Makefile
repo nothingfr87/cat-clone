@@ -8,4 +8,4 @@ install: build
 	sudo mv cfetch /usr/local/bin/
 
 clean:
-	rm -rf main 2>/dev/null
+	rm -rf cfetch 2>/dev/null

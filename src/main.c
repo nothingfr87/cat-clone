@@ -3,7 +3,7 @@
 #include <string.h>
 
 int main(int argc, char *argv[]) {
-  char buffer[256];
+  char buffer[1024];
   FILE *file_ptr = fopen(argv[1], "r");
   if (file_ptr == NULL) {
     printf(
