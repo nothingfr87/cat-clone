@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
     return 1;
   }
   while (fgets(buffer, sizeof(buffer), file_ptr) != NULL) {
-    printf(" %s", buffer);
+    printf("%s", buffer);
   }
   fclose(file_ptr);
   return 0;
