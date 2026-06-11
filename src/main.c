@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
   FILE *file_ptr = fopen(argv[1], "r");
   if (file_ptr == NULL) {
     printf(
-        "Error Occured When Trying to open a file, Maybe file doesn't exist");
+        "Error Occured When Trying to open a file, Maybe file doesn't exist\n");
     return 1;
   }
   while (fgets(buffer, sizeof(buffer), file_ptr) != NULL) {
