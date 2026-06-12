@@ -4,6 +4,10 @@
 int main(int argc, char *argv[]) {
   size_t buffer_size = 8192;
   char *buffer = malloc(buffer_size);
+  if (buffer == NULL) {
+    printf("Memory Allocation for Buffer Failed.");
+    exit(1);
+  }
   FILE *file_ptr = fopen(argv[1], "r");
   if (file_ptr == NULL) {
     perror("Error Occured When Trying to open a file.\n");

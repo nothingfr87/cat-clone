@@ -20,10 +20,10 @@ git clone https://github.com/nothingfr87/cat-clone.git
 cd cat-clone/
 
 # Build the source file
-make all
+make build
 
 # Run the file
-./main
+./cfetch
 ```
 
 ---
